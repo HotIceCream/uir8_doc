@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<projectDescription>
+	<name>УИР</name>
+	<comment></comment>
+	<projects>
+	</projects>
+	<buildSpec>
+		<buildCommand>
+			<name>net.sourceforge.texlipse.builder.TexlipseBuilder</name>
+			<arguments>
+			</arguments>
+		</buildCommand>
+	</buildSpec>
+	<natures>
+		<nature>net.sourceforge.texlipse.builder.TexlipseNature</nature>
+	</natures>
+	<linkedResources>
+		<link>
+			<name>src/fleqn.clo</name>
+			<type>1</type>
+			<location>/usr/share/texmf-texlive/tex/latex/base/fleqn.clo</location>
+		</link>
+		<link>
+			<name>src/leqno.clo</name>
+			<type>1</type>
+			<location>/usr/share/texmf-texlive/tex/latex/base/leqno.clo</location>
+		</link>
+		<link>
+			<name>src/size14.clo</name>
+			<type>1</type>
+			<location>/usr/share/texmf-texlive/tex/latex/extsizes/size14.clo</location>
+		</link>
+	</linkedResources>
+</projectDescription>

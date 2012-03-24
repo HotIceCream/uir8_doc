@@ -1,0 +1,17 @@
+tmp/*
+
+*.aux
+*.log
+*.toc
+
+*.dvi
+
+src/*.pdf
+
+*.iso
+
+*~
+~*
+.~*
+
+.directory

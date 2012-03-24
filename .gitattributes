@@ -1,0 +1,21 @@
+[attr]binary -diff -crlf
+
+*.pdf binary
+*.dvi binary
+
+*.jar binary
+*.ai  binary
+*.bin binary
+*.dat binary 
+
+*.png  binary
+*.eps  binary
+*.jpeg binary
+*.jpg  binary
+*.gif  binary
+*.tiff binary
+*.bmp  binary
+
+*.ps binary
+
+*.vsd binary
