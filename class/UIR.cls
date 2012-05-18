@@ -11,9 +11,9 @@
 \RequirePackage[russian]{babel}
 
 % Заметки о недоделках
-\RequirePackage[onecolomn, dvistyle, textwidth=1.8cm, 
-                textsize=tiny, colorinlistoftodos]{todonotes}
-\reversemarginpar
+%\RequirePackage[onecolomn, dvistyle, textwidth=1.8cm, 
+%                textsize=tiny, colorinlistoftodos]{todonotes}
+%\reversemarginpar
 
 % Рисунки
 \RequirePackage{graphicx}
@@ -25,7 +25,7 @@
 \RequirePackage{hhline}
 
 % Шрифты
-\RequirePackage{amsfonts}
+%\RequirePackage{amsfonts}
 
 % Поворот страницы
 \RequirePackage[pdftex]{lscape}
@@ -572,7 +572,7 @@
     \setlength\topsep{0pt}
 }
  
-    \setlength\partosep{0pt}
+    %\setlength\partosep{0pt}
     \setlength\parsep{0pt}
 
 
@@ -816,7 +816,7 @@
 \pagenumbering{arabic}
 
 \tabcolsep=2mm
-\renewcommand{\rmdefault}{ftm}
+% \renewcommand{\rmdefault}{ftm}
 \tolerance=1000
 \setlength{\marginparwidth}{1.5cm}
 \endinput

@@ -1,14 +1,14 @@
 #TeXlipse project settings
-#Sat Mar 24 20:30:33 MSK 2012
+#Fri May 18 01:47:00 MSD 2012
 markTmpDer=true
 builderNum=4
-outputDir=bin
+outputDir=bin/
 makeIndSty=
 bibrefDir=
 outputFormat=pdf
 tempDir=tmp
-mainTexFile=UIR_Example.tex
-outputFile=UIR_Example.pdf
+mainTexFile=UIR_Kholyavin.tex
+outputFile=UIR_Kholyavin.pdf
 langSpell=ru
 markDer=true
-srcDir=src
+srcDir=src/
