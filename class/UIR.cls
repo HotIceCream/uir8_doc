@@ -39,6 +39,8 @@
 \RequirePackage{amssymb}
 
 
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % МЕЖСТРОЧНЫЕ ИНТЕРВАЛЫ
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -273,7 +275,7 @@
     \end{center}
 %
 \NormalStretch
-\Lined[0]{\hspace{8cm}\textbf{Оценка:}}
+\Lined[0]{\hspace{4cm}\textbf{Оценка:}}
 \vspace{8mm}
 \noindent\begin{tabular}{rp{4.8cm}p{7cm}}
 \textbf{Выполнил:}             &  & Студент группы \PrintStudentGroup \\
@@ -712,8 +714,8 @@
 \setlength\fboxsep{3\p@}
 \setlength\fboxrule{.4\p@}
 
-\newcounter{equation}[section]
-\renewcommand\theequation{\thesection\@arabic\c@equation}
+\newcounter{equation1}[section]
+\renewcommand\theequation{\thesection\@arabic\c@equation1}
 
 \newcommand{\Description}[1]{ \global\def\@Description{#1}}
 
@@ -739,8 +741,8 @@
 %               {\@dblfloat{figure}}
 %               {\end@dblfloat}
 
-\newcounter{table}[section]
-\gdef\thetable{\thesection\@arabic\c@table}
+\newcounter{table1}[section]
+\gdef\thetable{\thesection\@arabic\c@table1}
 \def\fps@table{!h}%{tbp}
 \def\ftype@table{2}
 \def\ext@table{lot}
