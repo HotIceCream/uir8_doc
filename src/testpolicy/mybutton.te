@@ -1,0 +1,47 @@
+policy_module(mybutton,1.0)
+
+gen_require(`
+	class mybutton click;
+	type user_t;
+	type sysadm_t;
+	role user_r;	
+	role sysadm_r;
+#	type user_tmp_type;
+	type chkpwd_t;
+')
+
+# Private type declarations
+type mybutton_red_t;
+type mybutton_yellow_t;
+type mybutton_green_t;
+
+type mybutton_adm_domain_t;
+type mybutton_user_domain_t;
+
+type mybutton_exec_t;
+
+#type user_tmp_type;
+domain_type(mybutton_user_domain_t)
+domain_type(mybutton_adm_domain_t)
+
+#userdom_unpriv_user_template(mybuttonrole)
+
+role user_r types {mybutton_user_domain_t mybutton_adm_domain_t};
+role sysadm_r types {mybutton_user_domain_t mybutton_adm_domain_t};
+#allow user_r mybuttonrole_r;
+#userdom_unpriv_user_template(mybuttonrole)
+
+#role_transition user_r mybutton_exec_t mybuttonrole_r;
+
+type_transition user_t mybutton_exec_t:process mybutton_user_domain_t; 
+type_transition sysadm_t mybutton_exec_t:process mybutton_adm_domain_t;
+type_transition chkpwd_t mybutton_exec_t:process mybutton_adm_domain_t;
+#allow mybutton_user_domain_t mybutton_red_t:mybutton  click;
+allow mybutton_user_domain_t mybutton_yellow_t:mybutton click;
+allow mybutton_user_domain_t mybutton_green_t:mybutton click;
+
+allow mybutton_adm_domain_t mybutton_red_t:mybutton  click;
+#allow mybutton_adm_domain_t mybutton_yellow_t:mybutton click;
+allow mybutton_adm_domain_t mybutton_green_t:mybutton click;
+
+allow user_t mybutton_red_t:mybutton click;
