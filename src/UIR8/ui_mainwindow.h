@@ -97,8 +97,8 @@ public:
     {
         MainWindow->setWindowTitle(QApplication::translate("MainWindow", "MainWindow", 0, QApplication::UnicodeUTF8));
         buttonAllAccess->setText(QApplication::translate("MainWindow", "\320\224\320\276\321\201\321\202\321\203\320\277 \321\200\320\260\320\267\321\200\320\265\321\210\320\265\320\275 \320\262\321\201\320\265\320\274", 0, QApplication::UnicodeUTF8));
-        buttonAdmAccess->setText(QApplication::translate("MainWindow", "\320\224\320\276\321\201\321\202\321\203\320\277 \321\200\320\260\320\267\321\200\320\265\321\210\320\265\320\275 sysadm_u", 0, QApplication::UnicodeUTF8));
-        buttonUserAccess->setText(QApplication::translate("MainWindow", "\320\224\320\276\321\201\321\202\321\203\320\277 \321\200\320\260\320\267\321\200\320\265\321\210\320\265\320\275 user_u", 0, QApplication::UnicodeUTF8));
+        buttonAdmAccess->setText(QApplication::translate("MainWindow", "\320\224\320\276\321\201\321\202\321\203\320\277 \321\200\320\260\320\267\321\200\320\265\321\210\320\265\320\275 \320\260\320\264\320\274\320\270\320\275\320\270\321\201\321\202\321\200\320\260\321\202\320\276\321\200\321\203", 0, QApplication::UnicodeUTF8));
+        buttonUserAccess->setText(QApplication::translate("MainWindow", "\320\224\320\276\321\201\321\202\321\203\320\277 \321\200\320\260\320\267\321\200\320\265\321\210\320\265\320\275 \320\277\320\276\320\273\321\214\320\267\320\276\320\262\320\260\321\202\320\265\320\273\321\216", 0, QApplication::UnicodeUTF8));
     } // retranslateUi
 
 };
