@@ -135,10 +135,13 @@
         мы может построить с reference политикой. Эти конфигурационные файлы обычно те
         же самые что и файлы в
     \item \verb"appconfig/"  Эти файлы устанавливаются в директорию с политикой
-    (\verb"/etc/selinux/refpolicy") для поддержки сервисов и приложений.
+    (
+    
+    \verb"/etc/selinux/refpolicy") для поддержки сервисов и приложений.
     \item \verb doc/  Эта директория содержит файлы, которые поддерживают
     встроенную генерацию документации, которая является частью reference
     политики.  Конечную документацию можно посмотреть на web сайте
+    
         \verb http://oss.tresys.com/projects/refpolicy/wiki/Documentation . Или
         выполнив make html и заглянув в директорию
     \item \verb doc/html/support/  Эта директория содержит
@@ -173,7 +176,9 @@
 	  все модули политики, разделенные в разные директории по слоям.
 	  \item \verb"policy/support" эта директория содержит макросы, используемые
 	  модулями для помощи при написании политики. Например
-	  файл \verb"policy/support/obj_perm_sets.spt"  определяет макрос, который
+	  файл 
+	  
+	  \verb"policy/support/obj_perm_sets.spt"  определяет макрос, который
 	  определят список разрешений.
 	  \item \verb"policy/users"  этот файл содержит все определения пользователей
 	  для политики. Он содержит только основные определения.
@@ -1219,7 +1224,8 @@ type_change sysadm_t tty_device_t : chr_file sysadm_tty_device_t;
 
 \subsubsection{Правило type\_member}
 
-    Компилятор политики так же поддерживает третье правило типов, type\_member.
+    Компилятор политики так же поддерживает третье правило типов, 
+    type\_member.
     В настоящее время это правило не имеет смыслового значения, и его
     использование не произведет никакого эффекта. Работа по этому правилу еще не
     завершена. Одна в будущем данное правило будет предназначено для указания
@@ -1324,6 +1330,7 @@ class mybutton
 \end{verbatim}
 	После добавления класса необходимо так же добавить список разрешений, связанных
 	с данным классом. Для этого необходимо отредактировать файл
+	
 	policy/flask/access\_vectors. Этот файл содержит объявления общих расрешених и
 	их связи с классами, а также объявления классовых разрешений. Добавим следующие
 	строчки:
@@ -1453,7 +1460,7 @@ allow mybutton_user_domain_t mybutton_yellow_t:mybutton click;
 allow mybutton_user_domain_t mybutton_green_t:mybutton click;
 
 #Разрешения доступа для администратора к двум типам кнопок
-allow mybutton_adm_domain_t mybutton_red_t:mybutton  click;
+allow mybutton_adm_domain_t mybutton_red_t:mybutton  click; 
 allow mybutton_adm_domain_t mybutton_green_t:mybutton click;
 
 \end{verbatim}
@@ -1499,11 +1506,11 @@ allow mybutton_adm_domain_t mybutton_green_t:mybutton click;
 	Установка модуля политики производится с помощью утилиты semodule:
 \begin{verbatim}
 semodule -i mybutton.pp
-\end{verbatim}	
+\end{verbatim}	 
 	Проверить, загружен ли правила из модуля в систему можно с помощью утилиты
 	apol, которая позволяет отображать список всех правил, а так же производить
 	поиск по ним.
-\subsection{Программная проверка доступа с помощью библиотеки libselinux}
+\subsection{Проверка доступа с помощью библиотеки libselinux} 
 	Для демонстрации результатов написанной политики была написана программа с
 	пользовательским интерфейсом. Для разработки пользвотельского интерфейса
 	использовался QT фрэймворк. Программа имеет следующий вид:
@@ -1512,7 +1519,7 @@ semodule -i mybutton.pp
   \includegraphics[0cm,0cm][9cm,5cm]{./../img/program.png}\\
   \Description{Интерфейс программы}
   \caption{Интерфейс программы}
-\end{figure}
+\end{figure} 
 
     Если доступ разрешен пользователю показывается сообщение с текстом
     Access allowed, иначе показывается сообщение Access deny.
@@ -1614,13 +1621,13 @@ int result = avc_has_perm(myid, buttonid,
     \end{enumerate}
 
 % Отзыв руководителя (шаблон для рукописного заполнения)
-%\ReviewOfSupervisorTemplate
+\ReviewOfSupervisorTemplate
 
 % Отзыв руководителя
-\begin{ReviewOfSupervisor}
-
-\end{ReviewOfSupervisor} 
-
+%\begin{ReviewOfSupervisor}
+%
+%\end{ReviewOfSupervisor} 
+%
 % Задание на УИР (шаблон для рукописного заполнения)
 %\TaskOfStudentTemplate
 
